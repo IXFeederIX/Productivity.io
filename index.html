@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="index.css">
+  
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Productivity.io</h1>
+    <div class="card">
+        <div class="circle"></div>
+                <img src="brain.png" alt="brain" srcset="" class="brain">
+                <span class="tip">Tips:</span>
+                <span class="tips-content"></span>
+                <div class="border"> </div>
+            </div>
+    <div class="menu-start">
+    <div class="container">
+        <div class="bee">
+<img src="bee.png" alt="bee" srcset="" class="bee">
+        </div>
+        <p>Bee More Productive :)</p>
+        <button class="start">Start</button>
+    </div>
+
+    <div>
+        <select name="theme" id="theme" class="form-control rounded">
+            <option value="default" data-image="bee.png">Default (Bee)</option>
+            <option value="forest" data-image="apple.png">Forest (Apple)</option>
+            <option value="sea" data-image="fish.png">Sea (Fish)</option>
+            <option value="swamp" data-image="frog.png">Swamp (Frog)</option>
+        </select>
+    </div>
+   </div>
+   <div class="login-form">
+    <div class="circle"></div>
+    <form>
+        <h2>Login</h2>
+        <label for="username" class="log">Username:</label>
+        <input type="text" id="username" name="username" class="form-element">
+      
+        <label for="password"  class="log">Password:</label>
+        <input type="password" id="password" name="password" class="form-element">
+      
+        <input type="submit" value="Login" class="login-btn">
+      </form>
+      <a href="#" class="acc-link">Create Account</a>
+
+   </div>
+   <div class="register-form">
+    <form>
+        <label for="username" class="reg">Username:</label>
+        <input type="text" id="username" name="username" required class="form-element">
+        <br>
+        <label for="email" class="reg">Email:</label>
+        <input type="email" id="email" name="email" required class="form-element" >
+        <br>
+        <label for="password" class="reg">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required class="form-element">
+        <br>
+        <label for="confirm_password" class="reg">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" minlength="8" required class="form-element">
+        <br>
+        <input type="submit" value="Submit" class="login-btn">
+      </form>
+   </div>
+</body>
+<script src="index.js"></script>
+</html>

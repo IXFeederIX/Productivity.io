@@ -1,0 +1,306 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Geologica&family=Kanit&display=swap');
+
+
+body{
+     font-family: 'Geologica', sans-serif;
+    margin:0;
+    padding:0;
+    background-image: linear-gradient(to bottom, 
+    rgba(255, 180, 41, 1) 0%, 
+    rgba(255, 180, 41, 1) 25%, 
+    rgba(255, 157, 0, 1) 25%, 
+    rgba(255, 157, 0, 1) 50%, 
+    rgba(255, 134, 0, 1) 50%, 
+    rgba(255, 134, 0, 1) 75%, 
+    rgba(255, 180, 41, 1) 75%, 
+    rgba(255, 180, 41, 1) 100%
+  );
+}
+
+
+
+h1, .container, h2{
+    font-family: 'Geologica', sans-serif;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+
+    font-size: 4em;
+   
+
+}
+.container > p{
+    font-weight: 800;
+    color: #333;
+    text-shadow: 2px 2px #f7a828;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+.bee{
+    width: 15em;
+    height: 15em;
+    display: block;
+    animation-duration: 3s;
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  button {
+    background-color: whitesmoke;
+    width: 150px;
+    height: 75px;
+    border-radius: 25px;
+    border: 5px solid black;
+    font-family: 'Geologica', sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 2px black;
+  }
+  
+  button:active {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+  
+  button:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(223, 223, 223, 0.404);
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+  }
+  
+  button:active:after {
+    opacity: 1;
+  }
+  .brain{
+    width: 4em;
+    height: 4em;
+  }
+  .card{
+    font-family: 'Geologica', sans-serif;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    top: 0%;
+    left: 75%;
+    width: 20em;
+    height: 24em;
+    background-color: white;
+    border-radius: 25px;
+    border: 5px solid black;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+    .card > .tip{
+        font-size: 1.5em;
+        font-weight: 800;
+    }
+    .menu-start{
+        transition: opacity 1s ease-out;
+        opacity: 1;
+     
+    }
+    .tips-content {
+        transition: opacity 1s ease-out;
+        opacity: 1;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-flow: column;
+        }
+
+      .fade-out {
+        opacity: 0;
+      }
+.border{
+bottom: 5%;
+    position: absolute;
+    display: flex;
+    width: 90%;
+    border-radius: 25px;
+    height: 10px;
+    background-color: black;
+     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+.circle{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    right: 90%;
+    top: 2%;
+    border-radius: 50%;
+}
+#theme{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 1%;
+    border: 3px solid #333;
+    border-radius: 50px;
+    font-family: 'Geologica', sans-serif;
+    font-size: 1.1em;
+    top: 2%;
+    color: black;
+    text-shadow: 0px 1px #333;
+    transition: all 0.3s ease-in-out;
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 10px #E8E8E8 inset;
+    margin: 0 0 0 25px;
+    padding: 10px;
+
+}
+
+
+.login-form, .register-form{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    transition: all 0.3s ease-in;
+    width: 22em;
+    height: 22em;
+    background-color: white;
+    display: none;
+    justify-content: center;
+
+
+    margin: 0;
+    position: relative;
+    
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 40px;
+  left: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%);
+}
+.fade-in {
+  animation: fade-in 0.5s ease-in-out;
+  opacity: 1;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+h2{
+    top: 0;
+    font-size: 2em;
+    position: absolute;
+}
+.log{
+    opacity: 0.5;
+    position: relative;
+    top: 13%;
+    display: flex;
+    font-weight: 800;
+  
+    transition: all 0.3s ease-in;
+    font-size: 20px;
+}
+form{
+align-items: center;
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+}
+.form-element {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 200px;
+    height: 40px;
+    margin: 1em;
+    border-radius: 25px;
+    box-shadow: 0px 1px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .form-element:focus {
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .form-element:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-element::placeholder {
+    color: #999;
+  }
+.acc-link{
+    position: absolute;
+    bottom: 5%;
+    padding: 20px;
+font-size: 20px;
+color: #999;
+}
+.login-btn{
+  background-color: white;
+  border: 5px solid lightgray;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'Geologica', sans-serif;
+  color: black;
+  width: 125px;
+  transition: 0.5s all ease-in-out;
+}
+.login-btn:hover{
+  background-color: whitesmoke;
+  
+}
+.reg{
+  opacity: 0.5;
+  position: relative;
+  top: 1%;
+  display: flex;
+  font-weight: 800;
+
+  transition: all 0.3s ease-in;
+  font-size: 20px;
+}
