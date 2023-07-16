@@ -42,6 +42,7 @@ function tipsUpdater(){
   ]
       ]
       setInterval(() => {
+
         tips.classList.add("fade-out")
         function takeTipIndex(number){
           number = null

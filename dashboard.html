@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/e8ceb53c90.js" crossorigin="anonymous"></script>
+     
+    <title>Document</title>
+</head>
+<body>
+   
+<header>
+<div class="dashboard-menu">
+    <i class="fa-solid fa-bars"></i>
+</div>
+
+    <h1> Productivity.io</h1>
+
+    <div class="timer">
+ 
+  
+    <div class="container-date">
+        <span>&#x1F4C5; Today is:</span> <span class="date-info"></span>
+    </div>
+    <div class="container-time">
+        <span class="time"></span>
+        <label for="time-format"></label>
+        <select id="time-format">
+          <option value="12">12</option>
+          <option value="24">24</option>
+        </select>
+      </div>
+</div>
+</header>
+<div class="side-bar">
+
+<div class="user-bg">
+    <div class="user-picture">
+        <img src="path/to/image.png" alt="User picture">
+
+      </div>
+      <span class="name">Name</span>
+      <span class="username">Username</span>
+</div>
+<ul class="menu-user">
+    <ul>
+        <li>📊 <span>Dashboard</span> </li>
+        <li>📖 <span>Dairy</span> </li>
+        <li>🏃‍♀️ <span>My Activity</span> </li>
+        <li>🕰️ <span>History</span> </li>
+        <li>⚙️ <span>Settings</span> </li>
+      </ul>
+</ul>
+<button class="log-out">Sign Out <i class="fa-solid fa-right-from-bracket"></i></button>
+</div>
+<div class="side-bar-bg-cover"></div>
+<main>
+<div class="no-notes">
+    <div class="icon-notes"><i class="fa-regular fa-clipboard"></i></div>
+    <span>Seems Like you don't have Notes or any Task Running!
+    </span>
+  
+   
+</div>
+<button class="create">Create New Task</button>
+<div class="create-container">
+    <div class="new-task">
+        <img src="note-newtask.png" alt="" srcset="">
+        <span class="task-text">Create Note</span>
+    </div>
+    <div class="new-task">
+        <img src="date-newtask.png" alt="" srcset="">
+        <span class="task-text">Schedule a Date</span>
+    </div>
+    <div class="new-task">
+        <img src="activity-newtask.png" alt="" srcset="">
+        <span class="task-text">Activity</span>
+    </div>
+
+</div>
+</main>
+
+
+</body>
+<script src="dashboard.js"></script>
+</html>

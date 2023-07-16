@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Kanit&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #cee3e2;
+ font-family: 'Geologica', sans-serif;
+ transition: 1s all ease-in-out;
+ overflow: hidden;
+}
+h1{
+  z-index: 9999;
+    text-align: center;
+    position: fixed;
+    animation: fadeIn 1.5s ease-in-out;
+    opacity: 1;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 3.5em;
+}
+.fadeBg{
+  animation: fadeIn 1.5s ease-in-out;
+  transition: 1s all;
+  background-color: white;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .brain, .notes, .tasks, .running{
+    z-index: 1;
+    width: 20em;
+    height: 20em;
+    animation: float 5s ease-in-out;
+ animation-iteration-count: infinite;
+  }
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform:  translateY(0);
+    }
+  }
+  .book-bg{
+    width: 100%;
+    height: 100%;
+   z-index: 0;
+  position: fixed;
+  top: 0;
+
+
+  }
+
+  .line{
+    width: 100%;
+    height: 5px;
+    background-color: lightgray;
+    margin-bottom: 3em;
+  }
+  .page, .page2, .page3, .pagelast{
+  
+    margin: 1em;
+display: none;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+  }
+  .page > span, .page2 > span, .page3 > span, .pagelast > span{
+    z-index: 1;
+    font-size: 2em;
+    font-weight: 800;
+  }
+ 
+
+  .page > p, .page2 > p, .page3 > p, .pagelast > p {
+    z-index: 1;
+    text-align: center;
+    font-size: 2em;
+  }
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+.scroll-btn{
+  position: absolute;
+  display: flex;
+  bottom: 5%;
+  left: 90%;
+  text-align: center;
+  width: 120px;
+  height: 75px;
+  font-size: 1.2em;
+  flex-direction: row;
+  align-items: center;
+    background-color: white;
+  border: 5px solid lightgray;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Geologica', sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: black;
+  transition: 0.5s all ease-in-out;
+  z-index: 2;
+}
+.scroll-btn:active {
+  transform: translateY(2px);
+}
+.scroll-btn:hover{
+  background-color: whitesmoke;
+  
+}
+.icon{
+margin-left: 10px;
+font-size: 1.5em;
+}
+.start-btn {
+  width: 25%;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 1.2em;
+  border: 4px solid rgb(159, 255, 130);
+  background-color: white;
+  color: #333;
+  font-family: 'Geologica', sans-serif;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 1px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.start-btn::before,
+.start-btn::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.start-btn::before {
+  background-color: #ffcc00;
+}
+
+.start-btn::after {
+  background-color: #333;
+}
+
+.start-btn:hover {
+  color: rgb(0, 0, 0);
+  background-color: #7eff7a;
+}
+
+.start-btn:hover::before {
+  width: 100%;
+}
+
+.start-btn:hover::after {
+  width: 100%;
+}
+
+.start-btn .fa-check {
+  margin-left: 5px;
+  color: #0bb105;
+  transition: all 0.3s ease-in-out;
+}
+
+.start-btn:hover .fa-check {
+  transform: translateX(5px);
+}
